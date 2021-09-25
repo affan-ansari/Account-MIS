@@ -171,7 +171,7 @@ class Admin {
 						//  Check Balance
 						if(operation_option == 1)
 						{
-							System.out.println("Balance : " + String.valueOf(curr_account.get_balance()));
+							System.out.println("Balance : " + String.valueOf(curr_account.check_balance()));
 						}
 						//	Print statement	
 						else if(operation_option == 2)

@@ -36,10 +36,6 @@ public class Account {
 	{
 		return balance;
 	}
-	double get_balance()
-	{
-		return balance;
-	}
 	void print_statement()
 	{
 		
