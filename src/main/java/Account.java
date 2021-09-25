@@ -8,6 +8,30 @@ public class Account {
 	String type = null;
 	double interest = 0.0;
 	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this)
+			return true;
+		if (!(obj instanceof Account))
+            return false;
+		
+		Account c = (Account) obj;
+		
+		Boolean eq = false;
+		
+		if(
+				c.account_no == account_no &&
+				c.balance == balance &&
+				c.date_created == date_created &&
+				c.customer == customer &&
+				c.type == type &&
+				c.interest == interest
+		)
+			eq = true;
+		
+		return eq;
+	}
+	
 	double check_balance()
 	{
 		return balance;

@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class Admin {
+class Admin {
 	static Vector<Customer> customers = new Vector<Customer>(1);
 	static Vector<Account> accounts = new Vector<Account>(1);
 	static String[] account_types = {"saving", "checking"};
